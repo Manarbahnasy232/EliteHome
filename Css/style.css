@@ -1,0 +1,428 @@
+/* In your custom style.css */
+:root {
+  --bs-body-font-family: sans-serif;
+  /* You can also target specific stacks */
+  --bs-font-sans-serif: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar-title{
+  font-weight: 700;
+  font-size: 1.5rem;  
+  color: oklch(0.279 0.041 260.031)
+;
+
+}
+.container-fluid{
+    width: 95%;
+}
+
+
+.navbar-toggler{
+    border: none;        /* removes the border */
+  box-shadow: none;    /* removes any focus outline shadow */
+}
+
+.home {
+  padding-top: 15%;
+  min-height: screen;
+  background: 
+    linear-gradient(to right, #4d179acc, #59168bcc),
+    url(../imgs/hero-bg-img.png) center/cover no-repeat;
+  background-attachment:fixed;
+}
+
+
+
+.btn-primary {
+  background-color: #8e51ff;
+  border-color: #8e51ff;
+}
+.btn-primary:hover {
+  background-color: #7a3de0;
+  border-color: #7a3de0;
+}
+
+.form-container {
+  width: 100%;  
+  margin: 0 auto;
+}
+
+
+  .custom-bg {
+    background-color: #f0f0f0; /* Light gray */
+  }
+
+  .badge-premium {
+  display: inline-block;
+  border-radius: 50rem;      /* Oval pill shape */
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: oklch(45.7% .24 277.023);
+
+  /* Gradient border */
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  /* Glow effect */
+  box-shadow: 0 0 15px oklch(45.7% .24 277.023);
+  text-align: center;
+  position: relative;
+}
+
+/* Side lines */
+.badge-premium::before,
+.badge-premium::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #dbb2ff, transparent);
+}
+
+.badge-premium::before { left: -50px; }
+.badge-premium::after { right: -50px; }
+
+
+.bg-indigo {
+  background-color: #6610f2 !important;
+  color: #fff; /* ensures text is readable */
+}
+
+
+.indigo{
+ color: #6610f2;
+  font-weight: 700;
+}
+
+.customized-secondary{
+  color:oklch(0.446 0.03 256.802);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.customized-secondary1{
+  color:oklch(0.446 0.03 256.802);
+  font-weight: 400;
+  font-size: 0.80rem;
+}
+
+.featured-customized{
+   background: linear-gradient(90deg, #6b1cff,#864ae7, #ffe70c); 
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent; 
+   background-clip: text;
+   font-weight: 900;
+   font-size: 36px;
+}
+
+.featured-customized1{
+   background: linear-gradient(90deg, #4101b8 ,#5817d2,#b7a400c9, #ffe70c82); 
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent; 
+   background-clip: text;
+   font-weight: 900;
+   font-size: 36px;
+}
+
+.customized-btn {
+  background-color: #6610f2;
+  border-color: #6610f2;
+  color: #fff;
+  font-weight: 600;
+}
+.customized-btn:hover {
+  background-color: #520ecf;
+  border-color: #520ecf;
+}
+
+.btn-outline-primary{
+  color: oklch(54.1% .281 293.009);
+  border-color: #6610f2;
+  background-color: oklch(83.833% 0.07125 292.867 / 0.351);
+  width: 8rem;
+  font-size: 0.875rem;
+}
+
+.btn-outline-primary:hover{
+    background-color: oklch(57.979% 0.14283 294.633);
+
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #8e51ff, #ffffff);
+  color: #fff; /* keep text white */
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #7a3de0, #8e51ff);
+  color: #fff;
+}
+
+
+.zoom-img {
+  transition: transform 0.5s ease; /* smooth animation */
+}
+
+.zoom-img:hover {
+  transform: scale(1.1); /* zoom in by 10% */
+}
+
+
+/* Change color on hover */
+.heart-icon:hover {
+  color: red;
+}
+
+/* Active tab color */
+.nav-tabs .nav-link.active {
+  color: #8e51ff !important;
+  background-color: #8e51ff19 !important; /* light background for active tab */
+  font-weight: 500; /* optional for emphasis */
+}
+
+/* Inactive tab color */
+.nav-tabs .nav-link {
+  color: #000 !important;
+}
+
+.list-style{
+  list-style: none;
+}
+
+.text-purple {
+  color: #8e51ff; /* your brand purple */
+  background-image:linear-gradient( #8e51ff3d) !important; /* light background for active tab */
+  padding: 0.70rem 1.15rem;
+  border-radius: 1rem;
+  font-size: medium;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;          /* circle size */
+  height: 40px;
+  background-color: #8e51ff3d; /* light purple background */
+  border-radius: 50%;
+  color: #8e51ff;       /* icon color */
+  font-size: 16px;      /* icon size */
+}
+
+.icon-wrapper1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;          /* circle size */
+  height: 40px;
+  background-color: #07ff763d; /* light purple background */
+  border-radius: 50%;
+  color: #03ab3e;       /* icon color */
+  font-size: 16px;      /* icon size */
+}
+
+.icon-wrapper2 {
+  display: inline-flex;          /* flex container */
+  align-items: center;           /* vertical centering */
+  justify-content: center;       /* horizontal centering */
+  width: 50px;                   /* fixed size */
+  height: 50px;
+  background-color: #6610f2;     /* your indigo background */
+  border-radius: 20%;            /* circle */
+  color: #fff;                   /* icon color */
+  font-size: 20px;               /* icon size */
+}
+
+.mb-4{
+    p{
+    font-size: 0.8em;
+  }
+}
+
+.btn-customized{
+    background-color: #007936; /* light purple background */
+    color: #fff; /* font color */
+    padding-inline: 4%;
+}
+
+.btn-customized1{
+    background-color: #d88d02; /* light purple background */
+    color: #fff; /* font color */
+    padding-inline: 4%;
+}
+
+.bg-customized2{
+    background-color: blue; /* light purple background */
+    color: #fff; /* font color */
+    padding-inline: 4%;
+}
+ .btn-customized2:hover{
+        background-color: #0000ff;
+        color: #fff;
+    }
+
+.bg-customized1{
+  background-color: #ffd54d9a; /* light purple background */
+  color: #d88d02;
+}
+
+.btn-customized2{
+  background-color: rgb(65, 65, 255); /* light purple background */
+  color: white; /* font color */
+}
+.bg-white {
+  background-color: #fff; /* your brand purple */
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+
+.client-stories-section {
+  background: #4F1798; /* your brand purple */
+  width: 100%;         /* ensures full width */
+}
+
+.label {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+
+.badge-premium-1 {
+  position: relative;           /* gives ::before/::after a reference */
+  background-color: #fff;       /* white background */
+  color: #4F1798;               /* custom purple text */
+  display: inline-block;
+  border-radius: 50rem;         /* pill shape */
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.4rem 1rem;
+}
+
+/* Side lines */
+.badge-premium-1::before,
+.badge-premium-1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);  /* vertically center the lines */
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #dbb2ff, transparent);
+}
+
+.badge-premium-1::before { left: -60px; }
+.badge-premium-1::after { right: -60px; }
+
+
+/* Gold stars */
+.rating-stars {
+  color: #FFD700; /* gold */
+  font-size: 1.2rem;
+}
+
+/* Optional: dark text for contrast */
+.bg-white {
+  background-color: #fff !important;
+}
+
+.accordion-item {
+  margin-bottom: 1rem; /* adds gap between questions */
+  border-bottom: 1px solid #ddd; /* optional subtle divider */
+}
+
+.customized-p, .customized-E{
+  color: #863dff;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.customized-p1{
+  color: #c62b9f;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+}
+.icon-wrapper5 i {
+  background: linear-gradient(135deg, #ff22e2c4, #ff9900ac);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;          /* circle size */
+  height: 4rem;
+  border-radius: 20%;
+  color: #fff; /* icon color */
+   font-size: 1.5rem;
+}
+
+.icon-wrapper6 i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;        
+  height: 4rem;
+  border-radius: 20%;
+  background-color: blue;
+  color: #fff; /* icon color */
+   font-size: 1.5rem;
+
+}
+
+.icon-wrapper3{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;       
+  height: 4rem;
+  border-radius: 20%;
+  background-color: #A73DFF;
+  color: #fff; /* icon color */
+   font-size: 1.5rem;
+}
+
+.icon-wrapper8{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;       
+  height: 4rem;
+  border-radius: 20%;
+  background-color: #8A46FF;
+  color: #fff; /* icon color */
+   font-size: 1.5rem;
+}
+
+.fs-p{
+  font-size: small;
+}
+
+.light-gray-bg {
+  background-color: #f8f9fa; /* Bootstrap's light gray */
+}
+
+.customized-bg{
+  color: #e60076; /* your custom light gray */
+}
+
+.form-check-label1 {
+  font-size: 0.80em;
+  font-weight: 200; /* lighter */
+}
